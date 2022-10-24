@@ -12,10 +12,6 @@ public class Ejercicio12 {
 			valor2 = temp + valor2;
 			System.out.print(valor2+"; ");
         }
-
-
-
-
-
+        sc.close();
     }
 }

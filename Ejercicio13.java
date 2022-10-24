@@ -13,5 +13,6 @@ public class Ejercicio13 {
             }
         }
         System.out.println("Ha introducido "+positivos+" positivos y "+negativos+"negativos");
+        sc.close();
     }
 }

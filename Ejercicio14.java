@@ -27,6 +27,6 @@ public class Ejercicio14 {
         }
     
         System.out.println(base + "^" + exponente + " = " + potencia);
-    
+        sc.close();
     }
 }

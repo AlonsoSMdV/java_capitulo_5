@@ -7,5 +7,6 @@ public class Ejercicio11 {
     for(int cont=0;cont<=4;cont++){
         System.out.println(valor+cont+","+Math.pow(valor+cont, 2)+","+Math.pow(valor+cont, 3));
     }
+    sc.close();
     }
 }

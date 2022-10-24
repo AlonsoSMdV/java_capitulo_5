@@ -7,6 +7,6 @@ public class Ejercicio8 {
         for(int mul = 0; mul <= 10; mul++){
             System.out.println(num+" * "+mul+" = "+ num*mul);
         }
-        
+        sc.close();
     }
 }

@@ -17,5 +17,6 @@ public class Ejercicio15{
             }
             System.out.println(base + "^" + i + " = " + potencia);
         }
+        sc.close();
     }
 }
