@@ -13,7 +13,7 @@ public class Ejercicio30 {
         boolean correctos = true;
 
         do{
-            System.out.println("\nPor favor, introduzca la primera hora y el  dia.");
+            System.out.println("\nIntroduzca la primera hora y el  dia.");
             System.out.print("Día: ");
             dia1String = sc.nextLine();
             System.out.print("Hora: ");
@@ -22,93 +22,94 @@ public class Ejercicio30 {
             switch(dia1String){
                 case "lunes":
                 case "1":
-                dia1 = 1;
-                dia1nombre = "lunes";
-                break;
+                    dia1 = 1;
+                    dia1nombre = "lunes";
+                    break;
                 case "martes":
                 case "2":
-                dia1 = 2;
-                dia1nombre = "martes";
-                break;
-                case "miércoles":
+                    dia1 = 2;
+                    dia1nombre = "martes";
+                    break;
+                case "miercoles":
                 case "3":
-                dia1 = 3;
-                dia1nombre = "miércoles";
-                break;
+                    dia1 = 3;
+                    dia1nombre = "miércoles";
+                    break;
                 case "jueves":
                 case "4":
-                dia1 = 4;
-                dia1nombre = "jueves";
-                break;
+                    dia1 = 4;
+                    dia1nombre = "jueves";
+                    break;
                 case "viernes":
                 case "5":
-                dia1 = 5;
-                dia1nombre = "viernes";
-                break;
+                    dia1 = 5;
+                    dia1nombre = "viernes";
+                    break;
                 case "sábado":
                 case "6":
-                dia1 = 6;
-                dia1nombre = "sábado";
-                break;
+                    dia1 = 6;
+                    dia1nombre = "sábado";
+                    break;
                 case "domingo":
                 case "7":
-                dia1 = 7;
-                dia1nombre = "domingo";
-                break;
+                    dia1 = 7;
+                    dia1nombre = "domingo";
+                    break;
                 default:
-                dia1 = 0;
+                    dia1 = 0;
             }
             
-            System.out.println("Por favor, introduzca la segunda hora y el segundo dia.");
+            System.out.println("Ahora introduzca la segunda hora y el segundo dia.");
             System.out.print("Día: ");
-            dia2String = sc.nextLine();
+            dia2String = System.console().readLine();
             System.out.print("Hora: ");
             hora2 = sc.nextInt();
+
             switch(dia2String){
                 case "lunes":
                 case "1":
-                dia2 = 1;
-                dia2nombre = "lunes";
-                break;
+                    dia2 = 1;
+                    dia2nombre = "lunes";
+                    break;
                 case "martes":
                 case "2":
-                dia2 = 2;
-                dia2nombre = "martes";
-                break;
+                    dia2 = 2;
+                    dia2nombre = "martes";
+                    break;
                 case "miércoles":
                 case "3":
-                dia2 = 3;
-                dia2nombre = "miércoles";
-                break;
+                    dia2 = 3;
+                    dia2nombre = "miércoles";
+                    break;
                 case "jueves":
                 case "4":
-                dia2 = 4;
-                dia2nombre = "jueves";
-                break;
+                    dia2 = 4;
+                    dia2nombre = "jueves";
+                    break;
                 case "viernes":
                 case "5":
-                dia2 = 5;
-                dia2nombre = "viernes";
-                break;
+                    dia2 = 5;
+                    dia2nombre = "viernes";
+                    break;
                 case "sábado":
                 case "6":
-                dia2 = 6;
-                dia2nombre = "sábado";
-                break;
+                    dia2 = 6;
+                    dia2nombre = "sábado";
+                    break;
                 case "domingo":
                 case "7":
-                dia2 = 7;
-                dia2nombre = "domingo";
-                break;
+                    dia2 = 7;
+                    dia2nombre = "domingo";
+                    break;
                 default:
-                dia2 = 0;
+                    dia2 = 0;
             }
             correctos = true;
             if (dia2 <= dia1) {
                 System.out.println("El segundo día debe ser posterior al primero.");
                 correctos = false;
                 }
-                if ((dia1 == 0) || (dia2 == 0)) {
+                if ((dia1 <= 0) && (23 < dia1) || (dia2 <= 0) && (23 < dia2)) {
                 System.out.println("No se ha introducido correctamente el día de la semana.");
                 correctos = false;
                 }
