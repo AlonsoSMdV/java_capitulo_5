@@ -15,12 +15,12 @@ public class Ejercicio59 {
             for (int i = 1; i <= espaciosD; i++) {
                 System.out.print(" ");
             }
-            System.out.print("#");
+            System.out.print("^");
             for (int i = 1; i < espaciosI; i++) {
                 System.out.print(" ");
             }
             if (alt > 2) {
-                System.out.print("#");
+                System.out.print("^");
             }
             System.out.println();
             alt++;
@@ -28,7 +28,7 @@ public class Ejercicio59 {
             espaciosI += 2;
         } 
         for (int i = 1; i < alt * 2 - 2; i++) {
-            System.out.print("#");
+            System.out.print("^");
         }
         System.out.println();
         
@@ -36,7 +36,7 @@ public class Ejercicio59 {
         for (int i = 1; i <= espaciosD; i++) {
             System.out.print(" ");
         }
-        System.out.println("#");
+        System.out.println("Y");
         sc.close();
     }
 }
